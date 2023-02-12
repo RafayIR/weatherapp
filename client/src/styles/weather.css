@@ -1,0 +1,50 @@
+.weather--wrapper {
+    background-color: #1e1e1e;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+
+.weather--wrapper .card--content {
+    color: #fff;
+    background-color: #0b0b0b;
+    position: relative;
+}
+
+.weather--wrapper .card--content::before {
+    content: "";
+    position: absolute;
+    top: -75%;
+    left: -75%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+}
+
+
+  
+
+.weather--wrapper .card--content .card--header {
+    background: transparent;
+    font-size: 13px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.2) ;
+}
+
+
+.weather--wrapper .card--content .temp--heading{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.weather--wrapper .card--content .card--body {
+    margin-top: 40px;
+}
